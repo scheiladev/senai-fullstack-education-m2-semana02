@@ -141,30 +141,14 @@ button,
     var(--gray900) 0%,
     var(--black700) 100%
   );
-  border-style: solid;
-  border-width: 1px;
-  border-color: var(--gray900);
+  border: 1px solid var(--gray900);
   border-radius: 10px;
   padding: 64px 32px 32px;
 }
-#habilidades .tag {
-  text-align: center;
-}
-#habilidades .title {
-  text-align: center;
-}
 #habilidades .texto {
   max-width: 1000px;
-  text-align: center;
-  margin: 0 auto 64px;
 }
-#habilidades ul {
-  padding: 0;
-  list-style: none;
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 48px 48px;
-}
+
 #habilidades ul li {
   text-align: center;
   background-color: var(--white);
@@ -173,6 +157,9 @@ button,
   justify-content: center;
   padding: 16px;
   border-radius: 5px;
+}
+#habilidades ul li img {
+  width: 178px;
 }
 
 /* Formações */
