@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Scheila.dev</title>
     <link
-      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Inter:wght@100..900&family=Sora:wght@100..800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap"
       rel="stylesheet"
     />
     <link
@@ -19,39 +19,64 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
-      <div class="container">
-        <a href="./index.html">
+    <nav class="navbar navbar-expand-lg container">
+      <header class="container-fluid py-2">
+        <a class="navbar-brand" href="index.html">
           <img src="./assets/logo-scheila.png" alt="scheila.dev" />
         </a>
-        <nav>
-          <ul>
-            <li><a href="#sobre">Sobre Mim</a></li>
-            <li><a href="#habilidades">Habilidades</a></li>
-            <li><a href="#formacoes">Formações</a></li>
-            <li><a href="#clientes">Clientes</a></li>
-            <li><a href="#contato">Contato</a></li>
+
+        <button
+          class="navbar-toggler bg-light"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#sobre"
+                >Sobre Mim</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#habilidades">Habilidades</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#formacoes">Formações</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#clientes">Clientes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contato">Contato</a>
+            </li>
           </ul>
-        </nav>
-      </div>
-    </header>
+        </div>
+      </header>
+    </nav>
 
     <main>
       <section id="sobre" class="container">
         <h2 class="tag">/ Sobre Mim</h2>
         <h3 class="title">Olá! Sou Scheila Stihler</h3>
         <p class="texto">
-          Desenvolvedora Front-end com 16 anos de experiência no desenvolvimento
-          de sites e sistemas web. Sou Bacharel em Sistemas de Informação e
-          Pós-Graduada em Gerenciamento de Projetos.
+          Desenvolvedora Front-end com 16 anos de experiência no
+          desenvolvimento de sites e sistemas web. Sou Bacharel em Sistemas de
+          Informação e Pós-Graduada em Gerenciamento de Projetos.
         </p>
         <p class="texto">
-          Tenho excelentes habilidades de comunicação e colaboração, construindo
-          relacionamentos sólidos e de credibilidade com equipes e lideranças.
-          Meu foco está na qualidade e atenção aos detalhes, sempre comprometida
-          com entregas consistentes e confiáveis. Sou proativa, resiliente e
-          tenho uma forte motivação para aprimorar constantemente minhas
-          habilidades técnicas e interpessoais.
+          Tenho excelentes habilidades de comunicação e colaboração,
+          construindo relacionamentos sólidos e de credibilidade com equipes e
+          lideranças. Meu foco está na qualidade e atenção aos detalhes,
+          sempre comprometida com entregas consistentes e confiáveis. Sou
+          proativa, resiliente e tenho uma forte motivação para aprimorar
+          constantemente minhas habilidades técnicas e interpessoais.
         </p>
         <div>
           <button type="button" class="button-color">WhatsApp</button>
@@ -66,15 +91,17 @@
           Ao longo da minha carreira, tanto em projetos de estudo quanto de
           trabalho, utilizei e continuo aprimorando minhas habilidades em
           diversas tecnologias. Essas ferramentas e linguagens são essenciais
-          para o desenvolvimento de soluções inovadoras e eficazes, garantindo a
-          excelência em cada projeto que realizo.
+          para o desenvolvimento de soluções inovadoras e eficazes, garantindo
+          a excelência em cada projeto que realizo.
         </p>
         <ul>
           <li><img src="./assets/logo-html.jpg" alt="HTML" /></li>
           <li><img src="./assets/logo-css.png" alt="CSS" /></li>
           <li><img src="./assets/logo-wordpress.png" alt="Wordpress" /></li>
           <li><img src="./assets/logo-elementor.webp" alt="Elementor" /></li>
-          <li><img src="./assets/logo-woocommerce.png" alt="WooCommerce" /></li>
+          <li>
+            <img src="./assets/logo-woocommerce.png" alt="WooCommerce" />
+          </li>
           <li><img src="./assets/logo-jetengine.jpg" alt="JetEngine" /></li>
           <li><img src="./assets/logo-figma.png" alt="Figma" /></li>
           <li><img src="./assets/logo-angular.png" alt="Angular" /></li>
@@ -195,19 +222,22 @@
         </div>
       </section>
 
-      <section id="clientes">
+      <section id="clientes" class="container">
         <h2 class="tag">/ Clientes</h2>
         <h3 class="title">Projetos Recentes</h3>
         <p class="texto">
           Aqui você encontra uma seleção de meus projetos recentes realizados
           como freelance. Esses trabalhos destacam meu expertise na criação de
-          sites utilizando WordPress com o Elementor, combinando funcionalidade
-          e design estético para entregar soluções personalizadas e de alta
-          qualidade.
+          sites utilizando WordPress com o Elementor, combinando
+          funcionalidade e design estético para entregar soluções
+          personalizadas e de alta qualidade.
         </p>
         <ul>
           <li>
-            <img src="./assets/cliente-acp.png" alt="Acolhendo com Palavras" />
+            <img
+              src="./assets/cliente-acp.png"
+              alt="Acolhendo com Palavras"
+            />
             <div class="descricao">
               <h4>Acolhendo com Palavras</h4>
               <p>Ecommerce de livros</p>
@@ -240,6 +270,51 @@
               <h4>Ponte.tech</h4>
               <p>Portal de informações</p>
               <a href="https://ponte.tech" target="_blank" class="button-a">
+                ver ao vivo
+              </a>
+            </div>
+          </li>
+          <li>
+            <img src="./assets/cliente-otimilab.png" alt="Otimilab" />
+            <div class="descricao">
+              <h4>Otimilab</h4>
+              <p>Site institucional</p>
+              <a
+                href="https://otimilab.com.br"
+                target="_blank"
+                class="button-a"
+              >
+                ver ao vivo
+              </a>
+            </div>
+          </li>
+          <li>
+            <img
+              src="./assets/cliente-studiom.png"
+              alt="StudioM Fotografias"
+            />
+            <div class="descricao">
+              <h4>StudioM Fotografias</h4>
+              <p>Site institucional</p>
+              <a
+                href="https://studiomfotografias.com.br"
+                target="_blank"
+                class="button-a"
+              >
+                ver ao vivo
+              </a>
+            </div>
+          </li>
+          <li>
+            <img src="./assets/cliente-criativa.png" alt="Criativa Vet" />
+            <div class="descricao">
+              <h4>Criativa Vet</h4>
+              <p>Site institucional</p>
+              <a
+                href="https://criativavet.com.br"
+                target="_blank"
+                class="button-a"
+              >
                 ver ao vivo
               </a>
             </div>
@@ -279,49 +354,10 @@
             </div>
           </li>
           <li>
-            <img src="./assets/cliente-otimilab.png" alt="Otimilab" />
-            <div class="descricao">
-              <h4>Otimilab</h4>
-              <p>Site institucional</p>
-              <a
-                href="https://otimilab.com.br"
-                target="_blank"
-                class="button-a"
-              >
-                ver ao vivo
-              </a>
-            </div>
-          </li>
-          <li>
-            <img src="./assets/cliente-studiom.png" alt="StudioM Fotografias" />
-            <div class="descricao">
-              <h4>StudioM Fotografias</h4>
-              <p>Site institucional</p>
-              <a
-                href="https://studiomfotografias.com.br"
-                target="_blank"
-                class="button-a"
-              >
-                ver ao vivo
-              </a>
-            </div>
-          </li>
-          <li>
-            <img src="./assets/cliente-criativa.png" alt="Criativa Vet" />
-            <div class="descricao">
-              <h4>Criativa Vet</h4>
-              <p>Site institucional</p>
-              <a
-                href="https://criativavet.com.br"
-                target="_blank"
-                class="button-a"
-              >
-                ver ao vivo
-              </a>
-            </div>
-          </li>
-          <li>
-            <img src="./assets/cliente-marlise.png" alt="Marlise Arquitetura" />
+            <img
+              src="./assets/cliente-marlise.png"
+              alt="Marlise Arquitetura"
+            />
             <div class="descricao">
               <h4>Marlise Arquitetura</h4>
               <p>Site institucional</p>
@@ -353,7 +389,11 @@
             <div class="descricao">
               <h4>Metavalor</h4>
               <p>Site institucional</p>
-              <a href="https://metavalor.com" target="_blank" class="button-a">
+              <a
+                href="https://metavalor.com"
+                target="_blank"
+                class="button-a"
+              >
                 ver ao vivo
               </a>
             </div>
@@ -367,10 +407,10 @@
           <h3 class="title">Ficou interessado? Vamos conversar.</h3>
           <p class="texto">
             Estou ansiosa para ouvir sobre seus projetos e como posso ajudar a
-            transformar suas ideias em realidade. Fique à vontade para entrar em
-            contato comigo para discutir suas necessidades e objetivos. Estou
-            disponível para colaborar em novos projetos ou responder a quaisquer
-            perguntas que você possa ter. Aguardo o seu contato!
+            transformar suas ideias em realidade. Fique à vontade para entrar
+            em contato comigo para discutir suas necessidades e objetivos.
+            Estou disponível para colaborar em novos projetos ou responder a
+            quaisquer perguntas que você possa ter. Aguardo o seu contato!
           </p>
         </div>
         <form action="">
@@ -424,6 +464,7 @@
         </ul>
       </section>
     </footer>
+    </div>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
