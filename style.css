@@ -3,7 +3,12 @@
   --pink: #f70063;
   --yellow: #febd25;
   --white: #ffffff;
-  --black: #100620;
+  --black900: #100620;
+  --black700: #0f0520;
+  --gray900: #241a30;
+  --gray700: #323135;
+  --gray500: #636363;
+  --gray300: #9b96b0;
 }
 * {
   margin: 0;
@@ -14,6 +19,7 @@ body,
 button,
 input,
 textarea {
+  outline: none;
   font-family: "Comfortaa", sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -76,11 +82,21 @@ button {
   font-weight: 600;
 }
 body {
-  background: var(--black);
+  background: var(--black900);
   color: var(--white);
 }
+.title {
+  font-size: 40px;
+  font-weight: 900;
+  margin-bottom: 24px;
+}
+.texto {
+  color: var(--gray300);
+}
+
+/* Header */
 header {
-  background: var(--black);
+  background: var(--black900);
 }
 header .container {
   display: flex;
@@ -89,7 +105,13 @@ header .container {
   justify-content: space-between;
   padding: 16px 20px;
   border-bottom: 1px solid transparent;
-  border-image: linear-gradient(to right, var(--black), #323135, var(--black)) 1;
+  border-image: linear-gradient(
+      to right,
+      var(--black900),
+      var(--gray700),
+      var(--black900)
+    )
+    1;
 }
 header a > img {
   max-width: 186px;
@@ -114,6 +136,8 @@ header nav ul li a {
 header nav ul li a:hover {
   color: var(--purple);
 }
+
+/* Sobre Mim */
 #sobre {
   display: flex;
   flex-direction: column;
@@ -138,38 +162,44 @@ header nav ul li a:hover {
 #sobre .tag {
   text-align: center;
 }
-#sobre h3 {
+#sobre .title {
   font-size: 64px;
-  font-weight: 900;
-  margin-bottom: 32px;
 }
-#sobre p {
+#sobre .texto {
   text-align: center;
   max-width: 840px;
-  color: #969ab1;
 }
 #sobre div {
   display: flex;
   gap: 24px;
   margin-top: 48px;
 }
+
+/* Habilidades */
 #habilidades {
   background-color: transparent;
-  background-image: linear-gradient(180deg, #2b2338 0%, #0a0118 100%);
+  background-image: linear-gradient(
+    180deg,
+    var(--gray900) 0%,
+    var(--black700) 100%
+  );
   border-style: solid;
   border-width: 1px;
-  border-color: #241a30;
+  border-color: var(--gray900);
   border-radius: 10px;
-  padding: 64px 32px;
+  padding: 64px 32px 32px;
   margin-bottom: 80px;
 }
 #habilidades .tag {
   text-align: center;
 }
-#habilidades h3 {
-  font-size: 40px;
+#habilidades .title {
   text-align: center;
-  margin-bottom: 64px;
+}
+#habilidades .texto {
+  max-width: 1000px;
+  text-align: center;
+  margin: 0 auto 64px;
 }
 #habilidades ul {
   padding: 0;
@@ -187,16 +217,17 @@ header nav ul li a:hover {
   padding: 16px;
   border-radius: 5px;
 }
+
+/* Formações */
 #formacoes {
   background: url("./assets/bg_pattern.png") top center;
-  padding: 82px;
-  margin: 80px auto 0;
+  padding: 80px 0;
   position: relative;
   z-index: 0;
 }
 #formacoes::before {
   background-color: transparent;
-  background-image: linear-gradient(180deg, #0a011880 0%, #0f0520 100%);
+  background-image: linear-gradient(180deg, #0a011880 0%, var(--black700) 100%);
   content: "";
   display: block;
   position: absolute;
@@ -207,14 +238,16 @@ header nav ul li a:hover {
   z-index: -1;
 }
 #formacoes .container {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  gap: 64px;
+  display: grid;
+  grid-template-columns: 1.4fr 2fr;
+  gap: 80px;
   position: relative;
 }
-#formacoes h3 {
-  font-size: 40px;
+#formacoes .left {
+  position: sticky;
+  top: 80px;
+  flex: 1;
+  align-self: flex-start;
 }
 #formacoes ul {
   padding: 0;
@@ -229,9 +262,9 @@ header nav ul li a:hover {
   align-items: center;
   justify-content: center;
   gap: 24px;
-  color: #9b96b0;
+  color: var(--gray300);
   background-color: transparent;
-  background-image: linear-gradient(215deg, #2b233880 0%, #2b2338 65%);
+  background-image: linear-gradient(215deg, #2b233880 0%, var(--gray900) 65%);
   border-radius: 10px;
   padding: 24px;
 }
@@ -239,16 +272,19 @@ header nav ul li a:hover {
   max-width: 320px;
   border-radius: 10px;
 }
+
+/* Clientes */
 #clientes {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 80px 0 0;
+  margin-top: 50px;
 }
-#clientes h3 {
-  font-size: 40px;
-  margin-bottom: 64px;
+#clientes .texto {
+  max-width: 1000px;
+  margin: 0 auto 64px;
+  text-align: center;
 }
 #clientes ul {
   list-style: none;
@@ -259,23 +295,21 @@ header nav ul li a:hover {
 }
 #clientes ul li {
   padding: 16px;
-  border-style: solid;
-  border-width: 1px;
-  border-color: #241a30;
+  border: 1px solid var(--gray900);
   border-radius: 10px;
   position: relative;
   overflow: hidden;
-}
-#clientes ul li img {
-  max-width: 400px;
-  filter: grayscale(1);
-  transition: all 0.3s;
 }
 #clientes ul li:hover {
   border-style: solid;
   border-width: 1px;
   border-color: var(--purple);
   box-shadow: 0px 0px 60px 0px rgba(255, 255, 255, 0.1);
+}
+#clientes ul li img {
+  max-width: 400px;
+  filter: grayscale(1);
+  transition: all 0.3s;
 }
 #clientes ul li:hover img {
   filter: grayscale(0);
@@ -304,6 +338,8 @@ header nav ul li a:hover {
   opacity: 1;
   visibility: visible;
 }
+
+/* Contato */
 #contato {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -324,16 +360,20 @@ header nav ul li a:hover {
   background-size: cover;
   z-index: -1;
 }
-#contato h3 {
-  font-size: 48px;
+#contato .container {
+  display: grid;
+  grid-template-columns: 1.4fr 2fr;
+  gap: 80px;
 }
 #contato form {
   width: 640px;
   background-color: transparent;
-  background-image: radial-gradient(at top left, #2b2338 0%, #0a0118 100%);
-  border-style: solid;
-  border-width: 1px;
-  border-color: #241a30;
+  background-image: radial-gradient(
+    at top left,
+    var(--gray900) 0%,
+    var(--black700) 100%
+  );
+  border: 1px solid var(--gray900);
   border-radius: 10px;
   padding: 64px 32px;
   display: flex;
@@ -341,25 +381,36 @@ header nav ul li a:hover {
 }
 #contato form input,
 #contato form textarea {
-  color: var(--white);
-  background-color: #0f0520;
-  border-style: solid;
-  border-width: 1px;
-  border-color: #241a30;
+  color: var(--gray300);
+  background-color: var(--black700);
+  border: 1px solid var(--gray900);
   border-radius: 5px;
   padding: 8px 16px;
   margin: 4px 0 24px;
 }
+#contato form input:focus,
+#contato form textarea:focus {
+  border: 1px solid var(--purple);
+}
+
 #contato form label {
   font-weight: 900;
 }
+
+/* Dados Rodapé */
 .dados {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
   padding: 48px 0;
   border-top: 1px solid transparent;
-  border-image: linear-gradient(to right, var(--black), #323135, var(--black)) 1;
+  border-image: linear-gradient(
+      to right,
+      var(--black900),
+      var(--gray700),
+      var(--black900)
+    )
+    1;
 }
 .dados img {
   max-width: 168px;
@@ -369,20 +420,22 @@ header nav ul li a:hover {
   display: flex;
   flex-direction: column;
   gap: 12px;
-  color: #9b96b0;
+  color: var(--gray300);
 }
 .dados ul li a {
-  color: #9b96b0;
+  color: var(--gray300);
   text-decoration: none;
 }
+
+/* Copy Rodapé */
 .copy {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 16px 0;
   font-size: 14px;
-  color: #636363;
-  border-top: 1px solid #323135;
+  color: var(--gray500);
+  border-top: 1px solid var(--gray700);
 }
 .copy ul {
   display: flex;
@@ -391,6 +444,6 @@ header nav ul li a:hover {
   list-style: none;
 }
 .copy ul li a {
-  color: #636363;
+  color: var(--gray500);
   text-decoration: none;
 }
