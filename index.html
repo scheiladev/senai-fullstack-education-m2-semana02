@@ -1,104 +1,349 @@
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Scheila.dev</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Inter:wght@100..900&family=Sora:wght@100..800&display=swap"
+      rel="stylesheet"
+    />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header>
-      <a href="./index.html">
-        <img src="./assets/logo-scheila.png" alt="scheila.dev" />
-      </a>
-      <nav>
-        <ul>
-          <li><a href="#sobre">Sobre Mim</a></li>
-          <li><a href="#habilidades">Habilidades</a></li>
-          <li><a href="#clientes">Clientes</a></li>
-          <li><a href="#projetos">Projetos</a></li>
-          <li><a href="#contato">Contato</a></li>
-        </ul>
-      </nav>
-      <button type="button">Contato</button>
+      <div class="container">
+        <a href="./index.html">
+          <img src="./assets/logo-scheila.png" alt="scheila.dev" />
+        </a>
+        <nav>
+          <ul>
+            <li><a href="#sobre">Sobre Mim</a></li>
+            <li><a href="#habilidades">Habilidades</a></li>
+            <li><a href="#formacoes">Formações</a></li>
+            <li><a href="#clientes">Clientes</a></li>
+            <li><a href="#contato">Contato</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <main>
-      <section id="sobre">
-        <h2>Sobre Mim</h2>
+      <section id="sobre" class="container">
+        <h2 class="tag">/ Sobre Mim</h2>
+        <h3>Olá! Sou Scheila Stihler</h3>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit fugiat
-          dignissimos nesciunt eveniet distinctio autem repudiandae unde beatae
-          laudantium reiciendis illo soluta facere quae, nobis ratione dolorem
-          fugit officiis blanditiis.
+          Desenvolvedora Front-end com 16 anos de experiência no desenvolvimento
+          de sites e sistemas web. Sou Bacharel em Sistemas de Informação e
+          Pós-Graduada em Gerenciamento de Projetos.
+        </p>
+        <p>
+          Tenho excelentes habilidades de comunicação e colaboração, construindo
+          relacionamentos sólidos e de credibilidade com equipes e lideranças.
+          Meu foco está na qualidade e atenção aos detalhes, sempre comprometida
+          com entregas consistentes e confiáveis. Sou proativa, resiliente e
+          tenho uma forte motivação para aprimorar constantemente minhas
+          habilidades técnicas e interpessoais.
         </p>
         <div>
-          <button type="button">WhatsApp</button>
-          <button type="button">Contato</button>
+          <button type="button" class="button-color">WhatsApp</button>
+          <button type="button" class="button-border">Contato</button>
         </div>
       </section>
 
-      <section id="habilidades">
-        <h2>Habilidades</h2>
+      <section id="habilidades" class="container">
+        <h2 class="tag">/ Habilidades</h2>
+        <h3>Conhecimentos e Tecnologias</h3>
         <ul>
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>JavaScript</li>
-          <li>Responsividade</li>
-          <li>Acessibilidade</li>
-          <li>Semântica</li>
-          <li>React</li>
-          <li>Angular</li>
-          <li>SASS</li>
-          <li>Bootstrap</li>
-          <li>Tailwind</li>
-          <li>Wordpress</li>
-          <li>Elementor</li>
-          <li>WooCommerce</li>
-          <li>JetEngine</li>
-          <li>Figma</li>
-          <li>Git</li>
+          <li><img src="./assets/logo-html.jpg" alt="HTML" /></li>
+          <li><img src="./assets/logo-css.png" alt="CSS" /></li>
+          <li><img src="./assets/logo-wordpress.png" alt="Wordpress" /></li>
+          <li><img src="./assets/logo-elementor.webp" alt="Elementor" /></li>
+          <li><img src="./assets/logo-woocommerce.png" alt="WooCommerce" /></li>
+          <li><img src="./assets/logo-jetengine.jpg" alt="JetEngine" /></li>
+          <li><img src="./assets/logo-figma.png" alt="Figma" /></li>
+          <li><img src="./assets/logo-angular.png" alt="Angular" /></li>
+          <li><img src="./assets/logo-tailwind.png" alt="Tailwind" /></li>
+          <li><img src="./assets/logo-docker.png" alt="Docker" /></li>
+          <li><img src="./assets/logo-javascript.png" alt="JavaScript" /></li>
+          <li><img src="./assets/logo-sass.png" alt="SASS" /></li>
+          <li><img src="./assets/logo-bootstrap.png" alt="Bootstrap" /></li>
+          <li><img src="./assets/logo-react.png" alt="React" /></li>
+          <li><img src="./assets/logo-spring.png" alt="Spring" /></li>
+          <li><img src="./assets/logo-postgresql.png" alt="PostgreSQL" /></li>
+          <li><img src="./assets/logo-java.png" alt="Java" /></li>
+          <li><img src="./assets/logo-git.png" alt="Git" /></li>
+          <li><img src="./assets/logo-node.png" alt="Node" /></li>
+          <li><img src="./assets/logo-vue.png" alt="Vue" /></li>
         </ul>
+      </section>
+
+      <section id="formacoes">
+        <div class="container">
+          <div class="left">
+            <h2 class="tag">/ Formações</h2>
+            <h3>Últimos Treinamentos</h3>
+          </div>
+          <ul>
+            <li>
+              <img src="./assets/logo-codeboost.jpg" alt="Codeboost" />
+              <p>
+                O Codeboost é um curso de desenvolvimento web focado em
+                proporcionar uma experiência prática e imersiva para seus
+                alunos. Ele abrange uma ampla gama de tecnologias e ferramentas
+                modernas utilizadas no mercado de trabalho, com o objetivo de
+                capacitar os participantes a criar projetos web completos e
+                profissionais.
+              </p>
+              <p>
+                O curso inclui tópicos como HTML, CSS, JavaScript, frameworks
+                como React, e ferramentas de desenvolvimento como Git e GitHub.
+                Além disso, o Codeboost destaca-se por seu método de ensino
+                dinâmico, com aulas práticas e desafiadoras que incentivam o
+                aprendizado ativo e a resolução de problemas. Os alunos têm a
+                oportunidade de construir portfólios sólidos ao longo do curso,
+                o que é essencial para quem busca ingressar ou se destacar na
+                área de desenvolvimento web.
+              </p>
+            </li>
+            <li>
+              <img src="./assets/logo-webp.png" alt="WebP" />
+              <p>
+                O WebP, desenvolvido por Othon Ciparoni, é um curso online
+                focado em desenvolvimento web, projetado para capacitar alunos a
+                se tornarem desenvolvedores front-end proficientes. O curso
+                cobre uma vasta gama de tecnologias e práticas modernas
+                essenciais para a construção de aplicações web profissionais.
+              </p>
+              <p>
+                Os tópicos abordados incluem HTML, CSS, JavaScript, frameworks
+                populares como React, e ferramentas de versionamento de código
+                como Git e GitHub. O WebP destaca-se por seu enfoque prático,
+                com projetos do mundo real que permitem aos alunos aplicar o
+                conhecimento adquirido em situações concretas. A metodologia de
+                ensino de Othon Ciparoni é dinâmica e centrada no aluno,
+                promovendo um aprendizado interativo e contínuo, o que ajuda os
+                participantes a desenvolverem um portfólio robusto, essencial
+                para se destacar no mercado de trabalho como desenvolvedor
+                front-end.
+              </p>
+            </li>
+            <li>
+              <img src="./assets/logo-explorer.png" alt="Explorer" />
+              <p>
+                O Explorer é um curso da Rocketseat voltado para quem deseja
+                iniciar ou aprimorar suas habilidades em desenvolvimento web.
+                Projetado para proporcionar uma formação completa e prática, o
+                curso abrange desde os fundamentos até técnicas avançadas,
+                preparando os alunos para os desafios do mercado de trabalho.
+              </p>
+              <p>
+                Os conteúdos incluem HTML, CSS, JavaScript, além de frameworks e
+                bibliotecas como React. O curso também cobre práticas essenciais
+                de versionamento de código com Git e GitHub. O Explorer se
+                diferencia pela metodologia de ensino hands-on da Rocketseat,
+                que envolve os alunos em projetos práticos e desafiadores,
+                promovendo um aprendizado ativo e aplicado. O curso oferece
+                suporte contínuo através de uma comunidade engajada e de
+                materiais didáticos atualizados, ajudando os alunos a
+                desenvolverem um portfólio sólido e a se destacarem como
+                desenvolvedores web profissionais.
+              </p>
+            </li>
+            <li>
+              <img src="./assets/logo-origamid.png" alt="Origamid" />
+              <p>
+                A Origamid é uma escola online especializada em cursos de
+                desenvolvimento web e design, conhecida por oferecer uma
+                abordagem prática e detalhada para o aprendizado. Fundada por
+                André Rafael, a Origamid se destaca por seus conteúdos bem
+                estruturados e focados nas necessidades do mercado.
+              </p>
+              <p>
+                A Origamid se diferencia pela abordagem prática e detalhada, com
+                cursos que incluem exercícios práticos, projetos reais e
+                materiais de apoio extensivos. A escola visa não apenas ensinar
+                conceitos teóricos, mas também proporcionar aos alunos a
+                capacidade de aplicar esses conhecimentos em situações do mundo
+                real, preparando-os efetivamente para o mercado de trabalho.
+              </p>
+            </li>
+          </ul>
+        </div>
       </section>
 
       <section id="clientes">
-        <h2>Clientes</h2>
+        <h2 class="tag">/ Clientes</h2>
+        <h3>Projetos freelance recentes</h3>
         <ul>
-          <li>Curica Store</li>
-          <li>Acolhendo com Palavras</li>
-          <li>Somos Todos Pedro</li>
-          <li>Ponte.tech</li>
-          <li>Buggo</li>
-          <li>Advocacia Mattana</li>
-          <li>Metavalor</li>
-          <li>EcoEducacional</li>
-          <li>Bravo Multimarcas</li>
-          <li>StudioM Fotografias</li>
-          <li>Criativa Vet</li>
-          <li>Marlise Mattos Arquitetura</li>
-          <li>Ação Tech</li>
-          <li>Otimilab</li>
+          <li>
+            <img src="./assets/cliente-acp.png" alt="Acolhendo com Palavras" />
+            <div class="descricao">
+              <h4>Acolhendo com Palavras</h4>
+              <p>Ecommerce de livros</p>
+              <a
+                href="https://acolhendocompalavras.com.br"
+                target="_blank"
+                class="button-a"
+              >
+                ver ao vivo
+              </a>
+            </div>
+          </li>
+          <li>
+            <img src="./assets/cliente-stp.png" alt="Somos Todos Pedro" />
+            <div class="descricao">
+              <h4>Somos Todos Pedro</h4>
+              <p>Página de vendas</p>
+              <a
+                href="https://somostodospedro.com.br"
+                target="_blank"
+                class="button-a"
+              >
+                ver ao vivo
+              </a>
+            </div>
+          </li>
+          <li>
+            <img src="./assets/cliente-ponte.png" alt="Ponte.tech" />
+            <div class="descricao">
+              <h4>Ponte.tech</h4>
+              <p>Portal de informações</p>
+              <a href="https://ponte.tech" target="_blank" class="button-a">
+                ver ao vivo
+              </a>
+            </div>
+          </li>
+          <li>
+            <img src="./assets/cliente-buggo.png" alt="Buggo" />
+            <div class="descricao">
+              <h4>Buggo</h4>
+              <p>Site institucional</p>
+              <a href="https://buggo.io" target="_blank" class="button-a">
+                ver ao vivo
+              </a>
+            </div>
+          </li>
+          <li>
+            <img src="./assets/cliente-ingles.png" alt="Ingles.inc" />
+            <div class="descricao">
+              <h4>Ingles.inc</h4>
+              <p>Site institucional</p>
+              <a href="https://ingles.inc" target="_blank" class="button-a">
+                ver ao vivo
+              </a>
+            </div>
+          </li>
+          <li>
+            <img src="./assets/cliente-eco.png" alt="EcoEducacional" />
+            <div class="descricao">
+              <h4>EcoEducacional</h4>
+              <p>Site institucional</p>
+              <a
+                href="https://ecoeducacional.com.br"
+                target="_blank"
+                class="button-a"
+              >
+                ver ao vivo
+              </a>
+            </div>
+          </li>
+          <li>
+            <img src="./assets/cliente-otimilab.png" alt="Otimilab" />
+            <div class="descricao">
+              <h4>Otimilab</h4>
+              <p>Site institucional</p>
+              <a
+                href="https://otimilab.com.br"
+                target="_blank"
+                class="button-a"
+              >
+                ver ao vivo
+              </a>
+            </div>
+          </li>
+          <li>
+            <img src="./assets/cliente-studiom.png" alt="StudioM Fotografias" />
+            <div class="descricao">
+              <h4>StudioM Fotografias</h4>
+              <p>Site institucional</p>
+              <a
+                href="https://studiomfotografias.com.br"
+                target="_blank"
+                class="button-a"
+              >
+                ver ao vivo
+              </a>
+            </div>
+          </li>
+          <li>
+            <img src="./assets/cliente-criativa.png" alt="Criativa Vet" />
+            <div class="descricao">
+              <h4>Criativa Vet</h4>
+              <p>Site institucional</p>
+              <a
+                href="https://criativavet.com.br"
+                target="_blank"
+                class="button-a"
+              >
+                ver ao vivo
+              </a>
+            </div>
+          </li>
+          <li>
+            <img src="./assets/cliente-marlise.png" alt="Marlise Arquitetura" />
+            <div class="descricao">
+              <h4>Marlise Arquitetura</h4>
+              <p>Site institucional</p>
+              <a
+                href="https://https://marlisearquitetura.com.br/"
+                target="_blank"
+                class="button-a"
+              >
+                ver ao vivo
+              </a>
+            </div>
+          </li>
+          <li>
+            <img src="./assets/cliente-curica.png" alt="Curica Store" />
+            <div class="descricao">
+              <h4>Curica Store</h4>
+              <p>Ecommerce de roupas infantis</p>
+              <a
+                href="https://curicastore.com.br/home"
+                target="_blank"
+                class="button-a"
+              >
+                ver ao vivo
+              </a>
+            </div>
+          </li>
+          <li>
+            <img src="./assets/cliente-metavalor.png" alt="Metavalor" />
+            <div class="descricao">
+              <h4>Metavalor</h4>
+              <p>Site institucional</p>
+              <a href="https://metavalor.com" target="_blank" class="button-a">
+                ver ao vivo
+              </a>
+            </div>
+          </li>
         </ul>
       </section>
 
-      <section id="projetos">
-        <h2>Projetos</h2>
-        <ul>
-          <li>Codeboost</li>
-          <li>Ciparoni</li>
-          <li>Explorer</li>
-          <li>WebProcess</li>
-          <li>Origamid</li>
-        </ul>
-      </section>
-
-      <section id="contato">
-        <h2>Contato</h2>
+      <section id="contato" class="container">
+        <div>
+          <h2 class="tag">/ Contato</h2>
+          <h3>Ficou interessado? Vamos conversar.</h3>
+        </div>
         <form action="">
           <label for="nome">Nome</label>
           <input type="text" id="nome" name="nome" />
@@ -115,13 +360,13 @@
           <label for="mensagem">Mensagem</label>
           <textarea name="mensagem" id="mensagem"></textarea>
 
-          <button type="button">Enviar</button>
+          <button type="button" class="button-color">Enviar</button>
         </form>
       </section>
     </main>
 
-    <footer>
-      <section>
+    <footer class="container">
+      <section class="dados">
         <img src="./assets/logo-scheila.png" alt="scheila.dev" />
 
         <ul>
@@ -141,7 +386,7 @@
         </ul>
       </section>
 
-      <section>
+      <section class="copy">
         <span>© 2024. Todos os direitos reservados.</span>
 
         <ul>
