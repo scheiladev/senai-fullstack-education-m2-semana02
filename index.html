@@ -7,6 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Scheila.dev</title>
     <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link
       href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap"
       rel="stylesheet"
     />
@@ -20,7 +24,7 @@
   </head>
   <body class="m-0 p-0">
     <nav class="navbar navbar-expand-lg fixed-top p-0">
-      <header class="container py-2">
+      <header class="container-lg py-2">
         <a class="navbar-brand" href="index.html">
           <img src="./assets/logo-scheila.png" alt="scheila.dev" />
         </a>
@@ -62,30 +66,35 @@
     </nav>
 
     <main>
-      <section id="sobre" class="container text-center d-flex flex-column justify-content-center align-items-center">
+      <section
+        id="sobre"
+        class="container-lg text-center d-flex flex-column justify-content-center align-items-center"
+      >
         <h2 class="tag mb-2 fs-5">/ Sobre Mim</h2>
         <h3 class="title mb-4">Olá! Sou Scheila Stihler</h3>
         <p class="texto mb-3 fs-6">
-          Desenvolvedora Front-end com 16 anos de experiência no
-          desenvolvimento de sites e sistemas web. Sou Bacharel em Sistemas de
-          Informação e Pós-Graduada em Gerenciamento de Projetos.
+          Desenvolvedora Front-end com 16 anos de experiência no desenvolvimento
+          de sites e sistemas web. Sou Bacharel em Sistemas de Informação e
+          Pós-Graduada em Gerenciamento de Projetos.
         </p>
         <p class="texto">
-          Tenho excelentes habilidades de comunicação e colaboração,
-          construindo relacionamentos sólidos e de credibilidade com equipes e
-          lideranças. Meu foco está na qualidade e atenção aos detalhes,
-          sempre comprometida com entregas consistentes e confiáveis. Sou
-          proativa, resiliente e tenho uma forte motivação para aprimorar
-          constantemente minhas habilidades técnicas e interpessoais.
+          Tenho excelentes habilidades de comunicação e colaboração, construindo
+          relacionamentos sólidos e de credibilidade com equipes e lideranças.
+          Meu foco está na qualidade e atenção aos detalhes, sempre comprometida
+          com entregas consistentes e confiáveis. Sou proativa, resiliente e
+          tenho uma forte motivação para aprimorar constantemente minhas
+          habilidades técnicas e interpessoais.
         </p>
-        <div class="d-flex align-items-center justify-content-center column-gap-4 mt-5">
+        <div
+          class="d-flex align-items-center justify-content-center column-gap-4 mt-5"
+        >
           <button type="button" class="button-color">WhatsApp</button>
           <button type="button" class="button-border">Contato</button>
         </div>
       </section>
 
       <section id="habilidades">
-        <div class="container text-center">
+        <div class="container-lg text-center">
           <h2 class="tag mb-2 fs-5">/ Habilidades</h2>
           <h3 class="title mb-4">Conhecimentos e Tecnologias</h3>
           <p class="texto mx-auto mb-5 fs-6">
@@ -95,41 +104,73 @@
             para o desenvolvimento de soluções inovadoras e eficazes, garantindo
             a excelência em cada projeto que realizo.
           </p>
-          <ul class="list-group list-group-horizontal column-gap-5 mb-5">
-            <li class="list-group-item"><img src="./assets/logo-html.jpg" alt="HTML" /></li>
-            <li class="list-group-item"><img src="./assets/logo-css.png" alt="CSS" /></li>
-            <li class="list-group-item"><img src="./assets/logo-wordpress.png" alt="Wordpress" /></li>
-            <li class="list-group-item"><img src="./assets/logo-elementor.webp" alt="Elementor" /></li>
+          <ul class="list-group">
+            <li class="list-group-item">
+              <img src="./assets/logo-html.jpg" alt="HTML" />
+            </li>
+            <li class="list-group-item">
+              <img src="./assets/logo-css.png" alt="CSS" />
+            </li>
+            <li class="list-group-item">
+              <img src="./assets/logo-wordpress.png" alt="Wordpress" />
+            </li>
+            <li class="list-group-item">
+              <img src="./assets/logo-elementor.webp" alt="Elementor" />
+            </li>
             <li class="list-group-item">
               <img src="./assets/logo-woocommerce.png" alt="WooCommerce" />
             </li>
-          </ul>
-          <ul class="list-group list-group-horizontal column-gap-5 mb-5">
-            <li class="list-group-item"><img src="./assets/logo-jetengine.jpg" alt="JetEngine" /></li>
-            <li class="list-group-item"><img src="./assets/logo-figma.png" alt="Figma" /></li>
-            <li class="list-group-item"><img src="./assets/logo-angular.png" alt="Angular" /></li>
-            <li class="list-group-item"><img src="./assets/logo-tailwind.png" alt="Tailwind" /></li>
-            <li class="list-group-item"><img src="./assets/logo-docker.png" alt="Docker" /></li>
-          </ul>
-          <ul class="list-group list-group-horizontal column-gap-5 mb-5">
-            <li class="list-group-item"><img src="./assets/logo-javascript.png" alt="JavaScript" /></li>
-            <li class="list-group-item"><img src="./assets/logo-sass.png" alt="SASS" /></li>
-            <li class="list-group-item"><img src="./assets/logo-bootstrap.png" alt="Bootstrap" /></li>
-            <li class="list-group-item"><img src="./assets/logo-react.png" alt="React" /></li>
-            <li class="list-group-item"><img src="./assets/logo-spring.png" alt="Spring" /></li>
-          </ul>
-          <ul class="list-group list-group-horizontal column-gap-5 mb-5">
-            <li class="list-group-item"><img src="./assets/logo-postgresql.png" alt="PostgreSQL" /></li>
-            <li class="list-group-item"><img src="./assets/logo-java.png" alt="Java" /></li>
-            <li class="list-group-item"><img src="./assets/logo-git.png" alt="Git" /></li>
-            <li class="list-group-item"><img src="./assets/logo-node.png" alt="Node" /></li>
-            <li class="list-group-item"><img src="./assets/logo-vue.png" alt="Vue" /></li>
+            <li class="list-group-item">
+              <img src="./assets/logo-jetengine.jpg" alt="JetEngine" />
+            </li>
+            <li class="list-group-item">
+              <img src="./assets/logo-figma.png" alt="Figma" />
+            </li>
+            <li class="list-group-item">
+              <img src="./assets/logo-angular.png" alt="Angular" />
+            </li>
+            <li class="list-group-item">
+              <img src="./assets/logo-tailwind.png" alt="Tailwind" />
+            </li>
+            <li class="list-group-item">
+              <img src="./assets/logo-docker.png" alt="Docker" />
+            </li>
+            <li class="list-group-item">
+              <img src="./assets/logo-javascript.png" alt="JavaScript" />
+            </li>
+            <li class="list-group-item">
+              <img src="./assets/logo-sass.png" alt="SASS" />
+            </li>
+            <li class="list-group-item">
+              <img src="./assets/logo-bootstrap.png" alt="Bootstrap" />
+            </li>
+            <li class="list-group-item">
+              <img src="./assets/logo-react.png" alt="React" />
+            </li>
+            <li class="list-group-item">
+              <img src="./assets/logo-spring.png" alt="Spring" />
+            </li>
+            <li class="list-group-item">
+              <img src="./assets/logo-postgresql.png" alt="PostgreSQL" />
+            </li>
+            <li class="list-group-item">
+              <img src="./assets/logo-java.png" alt="Java" />
+            </li>
+            <li class="list-group-item">
+              <img src="./assets/logo-git.png" alt="Git" />
+            </li>
+            <li class="list-group-item">
+              <img src="./assets/logo-node.png" alt="Node" />
+            </li>
+            <li class="list-group-item">
+              <img src="./assets/logo-vue.png" alt="Vue" />
+            </li>
           </ul>
         </div>
       </section>
 
       <section id="formacoes">
-        <div class="container">
+        <div class="container-lg">
           <div class="left">
             <h2 class="tag mb-2 fs-5">/ Formações</h2>
             <h3 class="title mb-4">Últimos Treinamentos</h3>
@@ -230,22 +271,19 @@
         </div>
       </section>
 
-      <section id="clientes" class="container text-center">
+      <section id="clientes" class="container-lg text-center">
         <h2 class="tag mb-2 fs-5">/ Clientes</h2>
         <h3 class="title mb-4">Projetos Recentes</h3>
         <p class="texto mx-auto mb-5">
           Aqui você encontra uma seleção de meus projetos recentes realizados
           como freelance. Esses trabalhos destacam meu expertise na criação de
-          sites utilizando WordPress com o Elementor, combinando
-          funcionalidade e design estético para entregar soluções
-          personalizadas e de alta qualidade.
+          sites utilizando WordPress com o Elementor, combinando funcionalidade
+          e design estético para entregar soluções personalizadas e de alta
+          qualidade.
         </p>
         <ul class="row column-gap-2 row-gap-5 p-0">
-          <li class="col-3 mx-auto">
-            <img
-              src="./assets/cliente-acp.png"
-              alt="Acolhendo com Palavras"
-            />
+          <li class="col-lg-3 col-md-5 mx-auto">
+            <img src="./assets/cliente-acp.png" alt="Acolhendo com Palavras" />
             <div class="descricao">
               <h4 class="fs-5">Acolhendo com Palavras</h4>
               <p>Ecommerce de livros</p>
@@ -258,7 +296,7 @@
               </a>
             </div>
           </li>
-          <li class="col-3 mx-auto">
+          <li class="col-lg-3 col-md-5 mx-auto">
             <img src="./assets/cliente-stp.png" alt="Somos Todos Pedro" />
             <div class="descricao">
               <h4 class="fs-5">Somos Todos Pedro</h4>
@@ -272,7 +310,7 @@
               </a>
             </div>
           </li>
-          <li class="col-3 mx-auto">
+          <li class="col-lg-3 col-md-5 mx-auto">
             <img src="./assets/cliente-ponte.png" alt="Ponte.tech" />
             <div class="descricao">
               <h4 class="fs-5">Ponte.tech</h4>
@@ -282,7 +320,7 @@
               </a>
             </div>
           </li>
-          <li class="col-3 mx-auto">
+          <li class="col-lg-3 col-md-5 mx-auto">
             <img src="./assets/cliente-otimilab.png" alt="Otimilab" />
             <div class="descricao">
               <h4 class="fs-5">Otimilab</h4>
@@ -296,11 +334,8 @@
               </a>
             </div>
           </li>
-          <li class="col-3 mx-auto">
-            <img
-              src="./assets/cliente-studiom.png"
-              alt="StudioM Fotografias"
-            />
+          <li class="col-lg-3 col-md-5 mx-auto">
+            <img src="./assets/cliente-studiom.png" alt="StudioM Fotografias" />
             <div class="descricao">
               <h4 class="fs-5">StudioM Fotografias</h4>
               <p>Site institucional</p>
@@ -313,7 +348,7 @@
               </a>
             </div>
           </li>
-          <li class="col-3 mx-auto">
+          <li class="col-lg-3 col-md-5 mx-auto">
             <img src="./assets/cliente-criativa.png" alt="Criativa Vet" />
             <div class="descricao">
               <h4 class="fs-5">Criativa Vet</h4>
@@ -327,7 +362,7 @@
               </a>
             </div>
           </li>
-          <li class="col-3 mx-auto">
+          <li class="col-lg-3 col-md-5 mx-auto">
             <img src="./assets/cliente-buggo.png" alt="Buggo" />
             <div class="descricao">
               <h4 class="fs-5">Buggo</h4>
@@ -337,7 +372,7 @@
               </a>
             </div>
           </li>
-          <li class="col-3 mx-auto">
+          <li class="col-lg-3 col-md-5 mx-auto">
             <img src="./assets/cliente-ingles.png" alt="Ingles.inc" />
             <div class="descricao">
               <h4 class="fs-5">Ingles.inc</h4>
@@ -347,7 +382,7 @@
               </a>
             </div>
           </li>
-          <li class="col-3 mx-auto">
+          <li class="col-lg-3 col-md-5 mx-auto">
             <img src="./assets/cliente-eco.png" alt="EcoEducacional" />
             <div class="descricao">
               <h4 class="fs-5">EcoEducacional</h4>
@@ -361,11 +396,8 @@
               </a>
             </div>
           </li>
-          <li class="col-3 mx-auto">
-            <img
-              src="./assets/cliente-marlise.png"
-              alt="Marlise Arquitetura"
-            />
+          <li class="col-lg-3 col-md-5 mx-auto">
+            <img src="./assets/cliente-marlise.png" alt="Marlise Arquitetura" />
             <div class="descricao">
               <h4 class="fs-5">Marlise Arquitetura</h4>
               <p>Site institucional</p>
@@ -378,7 +410,7 @@
               </a>
             </div>
           </li>
-          <li class="col-3 mx-auto">
+          <li class="col-lg-3 col-md-5 mx-auto">
             <img src="./assets/cliente-curica.png" alt="Curica Store" />
             <div class="descricao">
               <h4 class="fs-5">Curica Store</h4>
@@ -392,16 +424,12 @@
               </a>
             </div>
           </li>
-          <li class="col-3 mx-auto">
+          <li class="col-lg-3 col-md-5 mx-auto">
             <img src="./assets/cliente-metavalor.png" alt="Metavalor" />
             <div class="descricao">
               <h4 class="fs-5">Metavalor</h4>
               <p>Site institucional</p>
-              <a
-                href="https://metavalor.com"
-                target="_blank"
-                class="button-a"
-              >
+              <a href="https://metavalor.com" target="_blank" class="button-a">
                 ver ao vivo
               </a>
             </div>
@@ -409,41 +437,55 @@
         </ul>
       </section>
 
-      <section id="contato" class="container">
+      <section id="contato" class="container-lg">
         <div class="left">
           <h2 class="tag mb-2 fs-5">/ Contato</h2>
           <h3 class="title mb-4">Ficou interessado? Vamos conversar.</h3>
           <p class="texto">
             Estou ansiosa para ouvir sobre seus projetos e como posso ajudar a
-            transformar suas ideias em realidade. Fique à vontade para entrar
-            em contato comigo para discutir suas necessidades e objetivos.
-            Estou disponível para colaborar em novos projetos ou responder a
-            quaisquer perguntas que você possa ter. Aguardo o seu contato!
+            transformar suas ideias em realidade. Fique à vontade para entrar em
+            contato comigo para discutir suas necessidades e objetivos. Estou
+            disponível para colaborar em novos projetos ou responder a quaisquer
+            perguntas que você possa ter. Aguardo o seu contato!
           </p>
         </div>
         <form action="" class="d-flex flex-column p-5">
           <div class="mb-3">
             <label for="nome" class="form-label">Nome</label>
-            <input type="text" id="nome" name="nome" class="form-control"/>
+            <input type="text" id="nome" name="nome" class="form-control" />
           </div>
 
           <div class="mb-3">
             <label for="telefone" class="form-label">Telefone</label>
-            <input type="tel" id="telefone" name="telefone" class="form-control"/>
+            <input
+              type="tel"
+              id="telefone"
+              name="telefone"
+              class="form-control"
+            />
           </div>
           <div class="mb-3">
             <label for="email" class="form-label">E-mail</label>
-            <input type="email" id="email" name="email" class="form-control"/>
+            <input type="email" id="email" name="email" class="form-control" />
           </div>
 
           <div class="mb-3">
             <label for="assunto" class="form-label">Assunto</label>
-            <input type="text" id="assunto" name="assunto" class="form-control"/>
+            <input
+              type="text"
+              id="assunto"
+              name="assunto"
+              class="form-control"
+            />
           </div>
 
           <div class="mb-3">
             <label for="mensagem" class="form-label">Mensagem</label>
-            <textarea name="mensagem" id="mensagem" class="form-control"></textarea>
+            <textarea
+              name="mensagem"
+              id="mensagem"
+              class="form-control"
+            ></textarea>
           </div>
 
           <button type="button" class="button-color">Enviar</button>
@@ -451,24 +493,30 @@
       </section>
     </main>
 
-    <footer class="container">
+    <footer class="container-lg">
       <section class="dados">
         <img src="./assets/logo-scheila.png" alt="scheila.dev" />
 
         <ul>
-          <li>(48) 98464-5785</li>
           <li>
-            <a href="mailto:contato@scheila.dev"> contato@scheila.dev </a>
+            <i class="bi bi-telephone-fill"></i>
+            <span>(48) 98464-5785</span>
+          </li>
+          <li>
+            <i class="bi bi-envelope-fill"></i>
+            <a href="mailto:contato@scheila.dev">contato@scheila.dev </a>
           </li>
         </ul>
 
         <ul>
           <li>
-            <a href="https://linkedin.com/in/scheiladev/">
-              linkedin.com/in/scheiladev/
-            </a>
+            <i class="bi bi-linkedin"></i>
+            <a href="https://linkedin.com/in/scheiladev/"> scheiladev </a>
           </li>
-          <li>Florianópolis/SC</li>
+          <li>
+            <i class="bi bi-geo-alt-fill"></i>
+            <span>Florianópolis/SC</span>
+          </li>
         </ul>
       </section>
 
@@ -476,12 +524,17 @@
         <span>© 2024. Todos os direitos reservados.</span>
 
         <ul>
-          <li><a href="#">Github</a></li>
-          <li><a href="#">Linkedin</a></li>
+          <li>
+            <i class="bi bi-github"></i>
+            <a href="#">Github</a>
+          </li>
+          <li>
+            <i class="bi bi-instagram"></i>
+            <a href="#">Instagram</a>
+          </li>
         </ul>
       </section>
     </footer>
-    </div>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"

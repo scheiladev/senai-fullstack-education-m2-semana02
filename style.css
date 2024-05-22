@@ -107,7 +107,7 @@ button,
 
 /* Sobre Mim */
 #sobre {
-  padding: 180px 0 60px;
+  padding: 180px 20px 60px;
   position: relative;
 }
 #sobre::before {
@@ -132,9 +132,9 @@ button,
 
 /* Habilidades */
 #habilidades {
-  padding: 100px 0;
+  padding: 100px 20px;
 }
-#habilidades .container {
+#habilidades .container-lg {
   background-color: transparent;
   background-image: linear-gradient(
     180deg,
@@ -148,7 +148,13 @@ button,
 #habilidades .texto {
   max-width: 1000px;
 }
-
+#habilidades .list-group {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 40px 40px;
+  justify-content: space-around;
+}
 #habilidades ul li {
   text-align: center;
   background-color: var(--white);
@@ -165,7 +171,7 @@ button,
 /* Formações */
 #formacoes {
   background: url("./assets/bg_pattern.png") top center;
-  padding: 100px 0;
+  padding: 100px 20px;
   position: relative;
   z-index: 0;
 }
@@ -181,7 +187,7 @@ button,
   left: 0;
   z-index: -1;
 }
-#formacoes .container {
+#formacoes .container-lg {
   display: grid;
   grid-template-columns: 1.5fr 2fr;
   gap: 80px;
@@ -301,7 +307,7 @@ button,
   grid-template-columns: 1.5fr 2fr;
   gap: 80px;
   position: relative;
-  padding: 100px 0;
+  padding: 100px 20px;
 }
 #contato::before {
   content: "";
@@ -337,7 +343,6 @@ button,
 #contato form .form-control:focus {
   border: 1px solid var(--purple);
 }
-
 #contato form .form-label {
   font-weight: 900;
 }
@@ -391,4 +396,97 @@ button,
 .copy ul li a {
   color: var(--gray500);
   text-decoration: none;
+}
+
+@media (max-width: 1200px) {
+  #habilidades ul li img {
+    width: 158px;
+  }
+  #contato form {
+    width: 500px;
+  }
+}
+@media (max-width: 991px) {
+  .navbar header {
+    padding: 20px;
+  }
+  #habilidades .list-group {
+    gap: 24px 24px;
+  }
+  #habilidades ul li img {
+    width: 128px;
+  }
+  #formacoes .container-lg {
+    display: flex;
+    flex-direction: column;
+  }
+  #formacoes .left {
+    position: initial;
+  }
+  #contato {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+  #contato form {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 768px) {
+  .title {
+    font-size: 32px;
+  }
+  #sobre .title {
+    font-size: 48px;
+  }
+  #sobre div {
+    flex-direction: column;
+    gap: 24px;
+  }
+  #habilidades ul li img {
+    width: 120px;
+  }
+  #clientes {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  #clientes ul {
+    gap: 24px !important;
+  }
+  #clientes ul li {
+    width: auto;
+  }
+  #clientes ul li img {
+    max-width: 100%;
+  }
+  #contato form {
+    width: 100%;
+    padding: 24px !important;
+  }
+  .dados img {
+    margin-bottom: 24px;
+  }
+  .dados,
+  .copy {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+  }
+  .dados ul li {
+    text-align: center;
+  }
+}
+
+@media (max-width: 512px) {
+  #habilidades .container-lg {
+    padding: 20px;
+  }
+  #habilidade ul li {
+    padding: 8px;
+  }
+  #habilidades ul li img {
+    width: 80px;
+  }
 }
