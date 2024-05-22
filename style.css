@@ -248,15 +248,6 @@ button,
 }
 #clientes .texto {
   max-width: 1000px;
-  margin: 0 auto 64px;
-  text-align: center;
-}
-#clientes ul {
-  list-style: none;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 48px;
-  padding: 0;
 }
 #clientes ul li {
   padding: 16px;
