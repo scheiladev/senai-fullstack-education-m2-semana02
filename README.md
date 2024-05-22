@@ -2,6 +2,8 @@
 
 ## Resolução dos exercícios da Semana 02 - Módulo 02
 
+[https://scheiladev.github.io/senai-fullstack-education-m2-semana02/]Resolução
+
 ### M2S02 | Roteiro do mini projeto da semana
 
 Olá, Dev!
